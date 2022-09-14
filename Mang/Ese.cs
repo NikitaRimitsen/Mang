@@ -6,24 +6,23 @@ using System.Threading.Tasks;
 
 namespace Mang
 {
-    class Ese : Entity
+    class Ese : Uksus
     {
-        public string nimi;
-        public int arv;
+        private string nimi;//переменная 'nimi' которая находится в этом классе
+        private int punktide_arv;//переменная 'punktide_arv' которая находится в этом классе
 
-        public Ese(string nimi, int punktidearv)
+        public Ese(string nimi, int punktide_arv)
         {
             this.nimi = nimi;
-            this.arv = punktidearv;
+            this.punktide_arv = punktide_arv;
         }
-
-        public string info() 
+        public string info()//Метод который возращает новые данные 'nimi' в класс 'Uksus'
         { 
             return nimi; 
         }
-        public int punktidearv()
+        public int punktideArv()//Метод который возращает новые данные 'punktide_arv' в класс 'Uksus'
         {
-            return arv;
+            return punktide_arv;
         }
     }
 }

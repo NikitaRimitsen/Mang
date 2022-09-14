@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Mang
 {
-    internal class Entity
+    interface Uksus
     {
-        public int punktideArv;
-        public string info;
+        public int punktideArv();//переменная 'punktideArv'
+        public string info();//переменная 'info'
     }
 }
